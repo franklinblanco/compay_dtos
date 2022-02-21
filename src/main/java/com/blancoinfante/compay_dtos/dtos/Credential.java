@@ -4,7 +4,8 @@ public class Credential <T> {
     public enum CredType{
         PHONE_NUMBER,
         EMAIL,
-        ID
+        ID,
+        TOKEN
     }
     T credential;
     CredType credentialType;
