@@ -19,9 +19,9 @@ public class User {
     private String password;
     private String user_key;
     public String email;
-    public Date date_created;
+    public long date_created;
 
-    public User(int id, String phone_number, String full_name, String gov_id, Date date_of_birth, String address, String password, String user_key) {
+    public User(int id, String phone_number, String full_name, String gov_id, Date date_of_birth, String address, String password, String user_key, long date_created) {
         this.id = id;
         this.phone_number = phone_number;
         this.full_name = full_name;
@@ -30,6 +30,7 @@ public class User {
         this.address = address;
         this.password = password;
         this.user_key = user_key;
+        this.date_created = date_created;
     }
 
     public User() {
@@ -107,11 +108,11 @@ public class User {
         this.email = email;
     }
 
-    public Date getDate_created() {
+    public long getDate_created() {
         return date_created;
     }
 
-    public void setDate_created(Date date_created) {
+    public void setDate_created(long date_created) {
         this.date_created = date_created;
     }
 }
