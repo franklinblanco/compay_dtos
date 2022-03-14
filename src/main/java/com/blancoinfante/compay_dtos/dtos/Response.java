@@ -26,4 +26,7 @@ public class Response <T>{
         this.messageResources = messageResources;
         this.response = response;
     }
+
+    public Response() {
+    }
 }
